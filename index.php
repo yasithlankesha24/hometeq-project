@@ -23,7 +23,7 @@ while ($arrayp=mysqli_fetch_array($exeSQL))
 	echo "<tr>";//first raw of the table
 	echo "<td style='border: 0px'>";
 	//display the small image as a clickable anchor that links to the product page
-	echo "<a href='product.php?u_prod_id=".$arrayp['prodId']."'><img src=images/".$arrayp['prodPicNameSmall']." height=200 width=200></a>";
+	echo "<a href='prodbuy.php?u_prod_id=".$arrayp['prodId']."'><img src=images/".$arrayp['prodPicNameSmall']." height=200 width=200></a>";
 	echo "</td>";//Modified code
 	//display the small image whose name is contained in the array
 	//echo "<img src=images/".$arrayp['prodPicNameSmall']." height=200 width=200>";//Access the currunt record 
